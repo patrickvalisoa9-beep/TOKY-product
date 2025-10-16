@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Learn Databases | Julie Product</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="product.html">Products</a></li>
+      <li><a href="database.html" class="active">Learn Database</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="page-header">
+    <h1>Learn About Databases</h1>
+    <p>A simple guide to understanding and using databases (bases de données).</p>
+  </header>
+
+  <!-- Section 1: What is a Database -->
+  <section class="content-section">
+    <h2>1. What is a Database?</h2>
+    <p>
+      A <strong>database</strong> is a structured collection of data that can be easily accessed, managed, and updated.
+      Databases help us organize information — for example, storing product names, prices, or customer information.
+    </p>
+    <p><em>Example:</em> A database for Julie Product might store a list of products and their prices.</p>
+
+    <div class="code-box">
+      <pre>
+Product Table
++----+--------------------+---------+
+| ID | Product Name       | Price   |
++----+--------------------+---------+
+| 1  | Natural Soap       | $5.00   |
+| 2  | Vanilla Oil        | $7.50   |
+| 3  | Body Lotion        | $9.99   |
++----+--------------------+---------+
+      </pre>
+    </div>
+  </section>
+
+  <!-- Section 2: SQL Example -->
+  <section class="content-section">
+    <h2>2. How to Create a Simple Table (SQL)</h2>
+    <p>
+      Databases often use a language called <strong>SQL</strong> (Structured Query Language).  
+      Here’s how you can create a simple table to store product data:
+    </p>
+
+    <div class="code-box">
+      <pre>
+CREATE TABLE products (
+  id INT PRIMARY KEY,
+  name VARCHAR(50),
+  price DECIMAL(5,2)
+);
+      </pre>
+    </div>
+
+    <p>After creating the table, you can add some data using <code>INSERT</code> commands:</p>
+
+    <div class="code-box">
+      <pre>
+INSERT INTO products (id, name, price)
+VALUES
+(1, 'Natural Soap', 5.00),
+(2, 'Vanilla Oil', 7.50),
+(3, 'Body Lotion', 9.99);
+      </pre>
+    </div>
+  </section>
+
+  <!-- Section 3: Retrieve Data -->
+  <section class="content-section">
+    <h2>3. How to View Data</h2>
+    <p>
+      To see the data stored in your table, use the <code>SELECT</code> command:
+    </p>
+
+    <div class="code-box">
+      <pre>
+SELECT * FROM products;
+      </pre>
+    </div>
+
+    <p>
+      This command shows all the products in your table — it’s like opening your list in Excel.
+    </p>
+  </section>
+
+  <!-- Section 4: Summary -->
+  <section class="content-section">
+    <h2>4. Summary</h2>
+    <ul>
+      <li>Databases store and organize information.</li>
+      <li>SQL helps you create, update, and read data.</li>
+      <li>Every table is like a spreadsheet with rows and columns.</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Julie Product | Learn Databases with Love ❤️</p>
+  </footer>
+
+</body>
+</html>

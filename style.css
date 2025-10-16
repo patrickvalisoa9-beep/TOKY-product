@@ -1,0 +1,396 @@
+/* ===== General Page Style ===== */
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* ===== Navigation Menu ===== */
+nav {
+  background: linear-gradient(90deg, #008b5f, #00b386);
+  padding: 12px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 18px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.nav-menu li a:hover,
+.nav-menu li a.active {
+  background: white;
+  color: #008b5f;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* ===== Welcome Section ===== */
+.text-box {
+  text-align: center;
+  background: linear-gradient(135deg, #d9f7df, #a6e6b7);
+  padding: 50px 20px;
+  border-radius: 20px;
+  margin: 30px auto;
+  max-width: 850px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.text-box h1 {
+  color: #00794c;
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 15px;
+}
+
+.text-box p {
+  font-size: 1.2rem;
+}
+
+/* ===== Photo Section ===== */
+.photo-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.photo-section h2 {
+  color: #00794c;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+/* ===== Gallery Layout ===== */
+.photo-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.featured-photo {
+  width: 220px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-photo:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+}
+
+/* ===== Learn Section ===== */
+.learn-section {
+  background: linear-gradient(90deg, #f2fff5, #d0f0d7);
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 20px;
+  margin: 50px 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.learn-section h2 {
+  color: #00794c;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.learn-section p {
+  max-width: 700px;
+  margin: 0 auto 20px;
+  font-size: 1.2rem;
+}
+
+/* ===== Button Links ===== */
+.button-link {
+  background: linear-gradient(90deg, #00794c, #00b386);
+  color: white;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 50px;
+  display: inline-block;
+  margin-top: 15px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0,179,134,0.3);
+}
+
+.button-link:hover {
+  background: linear-gradient(90deg, #00b386, #00794c);
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,179,134,0.4);
+}
+
+/* ===== Centered Link Wrapper ===== */
+.center-link {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: linear-gradient(90deg, #008b5f, #00b386);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* ===== Course Section ===== */
+.course-section {
+  text-align: center;
+  margin: 50px 20px;
+  padding: 40px 20px;
+  background: #fff5f0;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.course-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ff6f61;
+}
+
+.course-section p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.course-section .button-link {
+  background: linear-gradient(90deg, #ff6f61, #ff9472);
+}
+
+.course-section .button-link:hover {
+  background: linear-gradient(90deg, #ff9472, #ff6f61);
+}
+
+/* ===== Madagascar Section ===== */
+.madagascar-section {
+  text-align: center;
+  margin: 50px 20px;
+  padding: 40px 20px;
+  background: #e6f9f0;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.madagascar-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #009966;
+}
+
+.madagascar-section p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.madagascar-section .button-link {
+  background: linear-gradient(90deg, #4caf50, #66c466);
+}
+
+.madagascar-section .button-link:hover {
+  background: linear-gradient(90deg, #66c466, #4caf50);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .photo-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .featured-photo {
+    width: 80%;
+    height: auto;
+  }
+
+  .text-box h1,
+  .photo-section h2,
+  .learn-section h2,
+  .course-section h2,
+  .madagascar-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .text-box p,
+  .learn-section p,
+  .course-section p,
+  .madagascar-section p {
+    font-size: 1rem;
+  }
+
+  .button-link {
+    padding: 12px 24px;
+  }
+}
+
+/* ===== General Page Style ===== */
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* ===== Navigation ===== */
+nav {
+  background: linear-gradient(90deg, #008b5f, #00b386);
+  padding: 12px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li a {
+  color: white;
+  font-weight: bold;
+  padding: 8px 18px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-menu li a:hover,
+.nav-menu li a.active {
+  background: white;
+  color: #008b5f;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* ===== Sections ===== */
+section {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 40px 20px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+section h1, section h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #00794c;
+}
+
+section h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* ===== Buttons ===== */
+.button-link {
+  display: inline-block;
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(90deg, #00794c, #00b386);
+  border-radius: 50px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0,179,134,0.3);
+}
+
+.button-link:hover {
+  background: linear-gradient(90deg, #00b386, #00794c);
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,179,134,0.4);
+}
+
+/* ===== Media Cards ===== */
+.media-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.media-cards iframe,
+.media-cards img {
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  width: 320px;
+  height: 180px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.media-cards img {
+  height: auto;
+}
+
+.media-cards iframe:hover,
+.media-cards img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+}
+
+/* ===== Footer ===== */
+footer {
+  background: linear-gradient(90deg, #008b5f, #00b386);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .media-cards iframe,
+  .media-cards img {
+    width: 80%;
+    height: auto;
+  }
+
+  section h1 {
+    font-size: 2rem;
+  }
+
+  section h2 {
+    font-size: 1.6rem;
+  }
+}
+
+

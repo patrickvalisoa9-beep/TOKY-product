@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Julie Product - Madagascar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+  <style>
+    /* Global Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      transition: all 0.3s ease;
+    }
+
+    body {
+      line-height: 1.7;
+      background-color: #fcfcfc;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    /* Navigation */
+    nav {
+      background: linear-gradient(90deg, #ff6f61, #ff9472);
+      padding: 15px 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .nav-menu {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .nav-menu li a {
+      color: white;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 25px;
+      transition: all 0.3s;
+    }
+
+    .nav-menu li a:hover,
+    .nav-menu li a.active {
+      background: white;
+      color: #ff6f61;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    /* Header Section */
+    .text-box {
+      text-align: center;
+      padding: 100px 20px 60px 20px;
+      background: linear-gradient(135deg, #ff9a8b, #ff6f61);
+      color: white;
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    }
+
+    .text-box h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 3rem;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+    }
+
+    .text-box p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* Section Styles */
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 40px auto;
+      text-align: center;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      background: #fff;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+    }
+
+    section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+      color: #ff6f61;
+    }
+
+    section p {
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+      color: #555;
+    }
+
+    /* Buttons */
+    .button-link {
+      display: inline-block;
+      padding: 14px 32px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: white;
+      background: linear-gradient(90deg, #ff6f61, #ff9472);
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(255,111,97,0.4);
+    }
+
+    .button-link:hover {
+      background: linear-gradient(90deg, #ff9472, #ff6f61);
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 6px 20px rgba(255,111,97,0.5);
+    }
+
+    /* Photo Gallery */
+    .photo-section {
+      background: #fff0f0;
+    }
+
+    .photo-gallery {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .photo-gallery img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: transform 0.4s, box-shadow 0.4s, rotate 0.4s;
+    }
+
+    .photo-gallery img:hover {
+      transform: scale(1.08) rotate(-2deg);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    /* Specific Sections */
+    .course-section {
+      background: #f9f9ff;
+    }
+
+    .madagascar-section {
+      background: #e6f9f0;
+    }
+
+    .center-link {
+      text-align: center;
+      margin: 50px 0;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 25px 20px;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .photo-gallery {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .photo-gallery img {
+        width: 80%;
+        height: auto;
+      }
+
+      .text-box h1 {
+        font-size: 2.2rem;
+      }
+
+      section {
+        margin: 20px 10px;
+        padding: 40px 15px;
+      }
+
+      .button-link {
+        padding: 12px 24px;
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="product.html">Products</a></li>
+      <li><a href="database.html">Learn Database</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header Section -->
+  <div class="text-box">
+    <h1>Welcome to TOKY Product in Madagascar</h1>
+    <p>We offer high-quality, natural products to improve your life — and now, we help you learn digital skills too!</p>
+  </div>
+
+  <!-- Photo Gallery Section -->
+  <section class="photo-section">
+    <h2>Our Inspiration</h2>
+    <p>Quality, innovation, and style come together — inspired by the beauty of Madagascar.</p>
+    <div class="photo-gallery">
+      <img src="images/R.jpeg" alt="Stylish person 1">
+      <img src="images/tokypp.jpg " alt="Stylish person 2">
+      <img src="images/ober.jpg" alt="Stylish person 3">
+    </div>
+  </section>
+
+  <!-- Learn Database Section -->
+  <section class="learn-section">
+    <h2>Learn About Databases</h2>
+    <p>We now offer free lessons to help you understand <strong>bases de données</strong> — the foundation of modern data and technology.</p>
+    <a href="database.html" class="button-link">📚 Start Learning Databases</a>
+  </section>
+
+  <!-- Online Course Registration Section -->
+  <section class="course-section">
+    <h2>Register for Our Online Course</h2>
+    <p>Take your learning to the next level! Click below to register for our digital skills course.</p>
+    <a href="https://bit.ly/47a2KT0JIDEMAonlineCourseRegistration" class="button-link" target="_blank" rel="noopener noreferrer">🎓 Register Now</a>
+  </section>
+
+  <!-- Madagascar Special Link Section -->
+  <section class="madagascar-section">
+    <h2>Special Madagascar Link</h2>
+    <p>Check out our exclusive Madagascar resources and updates!</p>
+    <a href="https://bit.ly/3KGhnG3JidemaMadagascar" class="button-link" target="_blank" rel="noopener noreferrer">🌴 Explore Madagascar</a>
+  </section>
+
+  <!-- Product Link -->
+  <div class="center-link">
+    <a href="product.html" class="button-link">🛍 Go to Product Page</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 TOKY Product | All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
